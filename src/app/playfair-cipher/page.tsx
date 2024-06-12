@@ -204,7 +204,7 @@ export default function VigenereCipher() {
     setDecryptionTime(endTime - startTime);
 
     setCode("deci");
-    setDecryptedText(plainText);
+    setDecryptedText(plaintext);
     setDecryptedTextBase64(Buffer.from(plaintext).toString("base64"));
     setCipherText("");
     setCipherTextBase64("");
