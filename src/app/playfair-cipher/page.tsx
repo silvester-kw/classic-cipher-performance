@@ -154,7 +154,8 @@ export default function VigenereCipher() {
     setCode("ci");
     setCipherText(ciphertext);
     setCipherTextBase64(Buffer.from(ciphertext).toString("base64"));
-    //console.log(matrix)
+    setDecryptedText("");
+    setDecryptedTextBase64("");
   };
 
   const decryptPlayfairCipher = () => {
@@ -203,8 +204,10 @@ export default function VigenereCipher() {
     setDecryptionTime(endTime - startTime);
 
     setCode("deci");
-    setCipherText(plaintext);
-    setCipherTextBase64(Buffer.from(plaintext).toString("base64"));
+    setDecryptedText(plainText);
+    setDecryptedTextBase64(Buffer.from(plaintext).toString("base64"));
+    setCipherText("");
+    setCipherTextBase64("");
   };
 
   // Program utama
