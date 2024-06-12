@@ -1,0 +1,5 @@
+{
+  "/vigenere-cipher/page": "app/vigenere-cipher/page.js",
+  "/page": "app/page.js",
+  "/autokey-vigenere-cipher/page": "app/autokey-vigenere-cipher/page.js"
+}
