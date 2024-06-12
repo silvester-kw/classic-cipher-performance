@@ -77,8 +77,8 @@ export default function VigenereCipher() {
     setCode("ci");
     setCipherText(ciphertext.toUpperCase());
     setCipherTextBase64(Buffer.from(ciphertext).toString("base64"));
-    setCipherText("");
-    setCipherTextBase64("");
+    setDecryptedText("");
+    setDecryptedTextBase64("");
   };
 
   // Algoritma dekripsi untuk form input plain text
@@ -112,10 +112,10 @@ export default function VigenereCipher() {
     setDecryptionTime(endTime - startTime);
 
     setCode("deci");
-    setCipherText(decryptedText.toUpperCase());
-    setCipherTextBase64(Buffer.from(decryptedText).toString("base64"));
-    setDecryptedText("");
-    setDecryptedTextBase64("");
+    setDecryptedText(decryptedText.toUpperCase());
+    setDecryptedTextBase64(Buffer.from(decryptedText).toString("base64"));
+    setCipherText("");
+    setCipherTextBase64("");
   };
 
   // Menghandle perubahan file input

@@ -352,7 +352,7 @@ export default function VigenereCipher() {
               </div>
 
               <div className="mt-4 flex">
-                <a className="bg-black text-white p-2 rounded-lg flex items-center" href={`data:text/plain;charset=utf-8,${encodeURIComponent(cipherText)}`} download={`${code}pher_text.txt`}>
+                <a className="bg-black text-white p-2 rounded-lg flex items-center" href={`data:text/plain;charset=utf-8,${encodeURIComponent(decryptedText)}`} download={`${code}pher_text.txt`}>
                   <FiDownload className="mr-2" />
                   Download Text File
                 </a>
